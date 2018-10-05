@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="IA Toolkit Test Pages">
+	<title>Test Index</title>
+	<style type="text/css">
+		table {
+		    counter-reset: rowNumber;
+		}
+
+		table tbody tr {
+		    counter-increment: rowNumber;
+		}
+
+		table tbody tr td:first-child::before {
+		    content: counter(rowNumber);
+		    min-width: 1em;
+		    margin-right: 0.5em;
+		}		
+	</style>
+</head>
+<body>
+
+<h1>controls</h1>
+<table>
+	<thead>
+		<tr>
+			<th scope='column'>Test Description</th>
+			<th scope='column'>Test Page</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>button text</td>
+			<td><a href="001.html">test page</a></td>
+		</tr>
+		<tr>
+			<td>button image label</td>
+			<td><a href="002.html">test page</a></td>
+		</tr>		
+		<tr>
+			<td>fieldset, no legend</td>
+			<td><a href="003.html">test page</a></td>
+		</tr>		
+		<tr>
+			<td>fieldset, multiple legends</td>
+			<td><a href="004.html">test page</a></td>
+		</tr>			
+
+		<tr>
+			<td>fieldset,empty legend</td>
+			<td><a href="005.html">test page</a></td>
+		</tr>
+		<tr>
+			<td>orphaned label, no matching for/id</td>
+			<td><a href="006.html">test page</a></td>
+		</tr>		
+		<tr>
+			<td>visible label, hidden input</td>
+			<td><a href="007.html">test page</a></td>
+		</tr>		
+		<tr>
+			<td>HTML input validation</td>
+			<td><a href="008.html">test page</a></td>
+		</tr>	
+		<tr>
+			<td>aria-invalid</td>
+			<td><a href="009.html">test page</a></td>
+		</tr>		
+		<tr>
+			<td>aria-required - radio button</td>
+			<td><a href="010.html">test page</a></td>
+		</tr>		
+		<tr>
+			<td>required</td>
+			<td><a href="011.html">test page</a></td>
+		</tr>	
+		<tr>
+			<td>multiple form labels</td>
+			<td><a href="012.html">test page</a></td>
+		</tr>		
+		<tr>
+			<td>radio, checkbox nesting</td>
+			<td><a href="013.html">test page</a></td>
+		</tr>		
+		<tr>
+			<td>hidden labels</td>
+			<td><a href="014.html">test page</a></td>
+		</tr>	
+		<tr>
+			<td>image input, no alt</td>
+			<td><a href="015.html">test page</a></td>
+		</tr>		
+		<tr>
+			<td>multiple labelling techniques</td>
+			<td><a href="016.html">test page</a></td>
+		</tr>		
+		<tr>
+			<td>placeholder, label mismatch</td>
+			<td><a href="017.html">test page</a></td>
+		</tr>	
+		<tr>
+			<td>placeholder as label</td>
+			<td><a href="018.html">test page</a></td>
+		</tr>		
+		<tr>
+			<td>empty label text</td>
+			<td><a href="019.html">test page</a></td>
+		</tr>		
+		<tr>
+			<td>semantic required</td>
+			<td><a href="020.html">test page</a></td>
+		</tr>	
+		<tr>
+			<td>invalid aria-labelledby</td>
+			<td><a href="021.html">test page</a></td>
+		</tr>		
+		<tr>
+			<td>invalid aria-describedby</td>
+			<td><a href="022.html">test page</a></td>
+		</tr>		
+		<tr>
+			<td>non button missing label text</td>
+			<td><a href="023.html">test page</a></td>
+		</tr>			
+		<tr>
+			<td>duplicate labels</td>
+			<td><a href="024.html">test page</a></td>
+		</tr>					
+		<tr>
+			<td>duplicate for/id</td>
+			<td><a href="025.html">test page</a></td>
+		</tr>							
+		<tr>
+			<td>&lt;label <em>aria-hidden='true'</em>&gt;</td>
+			<td><a href="026.html">test page</a></td>
+		</tr>								
+		<tr>
+			<td>&lt;label <em>display:none</em>&gt;</td>
+			<td><a href="027.html">test page</a></td>
+		</tr>
+		<tr>
+			<td>&lt;label <em>visibility:hidden</em>&gt;</td>
+			<td><a href="028.html">test page</a></td>
+		</tr>
+		<tr>
+			<td>&lt;label&gt; parent -- <em>aria-hidden'true'</em></td>
+			<td><a href="029.html">test page</a></td>
+		</tr>
+		<tr>
+			<td>&lt;label&gt; parent -- <em>display:none</em>/td>
+			<td><a href="030.html">test page</a></td>
+		</tr>
+	</tbody>
+</table>
+
+</body>
+</html>

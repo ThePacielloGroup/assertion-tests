@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="nested table">
+	<title>tables</title>
+	<style type="text/css">
+		table {
+			border: 3px solid blue;
+		}
+		th, td {
+		    border: 1px solid #666;
+		    padding: 3px;   
+		}		
+	</style>
+</head>
+<body>
+
+<table>
+	<caption>nested table</caption>
+	<thead>
+		<tr>
+			<th scope='row'>col 1</th>
+			<th scope='row'>col 2</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>data 1</td>
+			<td>data 2</td>
+		</tr>
+		<tr>
+			<td>data 3</td>
+			<td>
+				<table>
+					<thead>
+						<tr>
+							<th scope='row'>1-col</th>
+							<th scope='row'>2-col</th>
+							<th scope='row'>3-col</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>a</td>
+							<td>b</td>
+							<td>c</td>
+						</tr>
+						<tr>
+							<td>aa</td>
+							<td>bb</td>
+							<td>cc</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<hr>
+<table role='presentation'>
+	<tbody>
+		<tr>
+			<td><a href="#">one</a></td>
+			<td><a href="#">tow</a></td>
+		</tr>
+		<tr>
+			<td><p>oajsdf adfioj foiofjof odfjioasdfj asdiojdf</p></td>
+			<td>
+				<table>
+					<tbody>
+						<tr>
+							<td><a href="#">asdf</a></td>
+							<td><p>loajsdfoiajsdfo djf</p></td>
+							<td><a href="#">asjflasdjfaosdifj </a></td>
+						</tr>
+						<tr>
+							<td colspan='3'>aa</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>

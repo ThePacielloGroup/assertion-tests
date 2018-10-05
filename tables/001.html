@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="presentational data table">
+	<title>tables</title>
+</head>
+<body>
+
+<table>
+	<caption>This is a simple table</caption>
+	<td>one</td>
+	<td>two</td>
+	<td>three</td>
+</table>
+<hr>
+<table role='presentation' class='bad1'>
+	<caption>This is a simple table</caption>
+	<td>one</td>
+	<td>two</td>
+	<td>three</td>
+</table>
+<hr>
+<table summary="This is a simple one column data table">
+	<td>one</td>
+	<td>two</td>
+	<td>three</td>
+</table>
+<hr>
+<table summary="This is a simple one column data table" role='presentation' class='bad2'>
+	<td>one</td>
+	<td>two</td>
+	<td>three</td>
+</table>
+<hr>
+<table>
+	<thead>
+		<tr>
+			<th scope='col'>COL 1</th>
+			<th scope='col'>COL 2</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>penny</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>nickle</td>
+		</tr>
+	</tbody>
+</table>
+<hr>
+<table role='presentation' class='bad3'>
+	<thead>
+		<tr>
+			<th scope='col'>COL 1</th>
+			<th scope='col'>COL 2</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>penny</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>nickle</td>
+		</tr>
+	</tbody>
+</table>
+<hr>
+<table>
+	<tr>
+		<td rowspan='3'>one</td>
+	</tr>
+	<tr>
+		<td span='2'>two</td>
+		<td>one</td>
+	</tr>
+</table>
+<hr>
+<table role='presentation'>
+	<tr>
+		<td rowspan='3'>one</td>
+	</tr>
+	<tr>
+		<td span='2'>two</td>
+		<td>one</td>
+	</tr>
+</table>
+<hr>
+
+
+</body>
+</html>

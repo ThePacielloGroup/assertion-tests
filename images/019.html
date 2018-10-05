@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="various 'alt' types">
+</head>
+<body>
+
+<h1>images</h1>
+<h2>input image labelled using aria-labelledby</h2>
+<input type="image" name="" src="\assets\rss.jpg" aria-labelledby='rss1 rss2'>
+<p id='rss1'>ACME RSS Feed</p>
+<br>
+<h2>input image using invalid aria-labelledby</h2>
+<input type="image" name="" src="\assets\rss.jpg" aria-labelledby='badid'>
+<br>
+<h2>input image labelled using aria-label</h2>
+<input type="image" name="" src="\assets\rss.jpg" aria-label='road runner'>
+<br>
+<h2>input image labelled using for/id</h2>
+<label for='rss2'>RSS Feed</label>
+<input type="image" name="" src="\assets\rss.jpg" id='rss2'>
+<br>
+<label for='rss3'> Road Runner
+	<input type="image" name="" src="\assets\rss.jpg" id='rss3'>
+</label>
+<br>
+<h2>input image labelled using for nesting</h2>
+<label>ACME News
+	<input type="image" name="" src="\assets\rss.jpg">
+</label>
+<br>
+<h2>input image with a title</h2>
+<input type="image" name="" src="\assets\rss.jpg" title='rss feed'>
+<br>
+
+</body>
+</html>

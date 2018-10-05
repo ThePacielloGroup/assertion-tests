@@ -1,0 +1,15 @@
+.strike {
+	text-decoration: line-through;	
+}
+.italic {
+	font-style: italic;
+}
+.oblique {
+	font-style: oblique;
+}
+.overline {
+	text-decoration: overline;
+}
+.underline {
+	text-decoration: underline;
+}

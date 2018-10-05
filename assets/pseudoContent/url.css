@@ -1,0 +1,7 @@
+.before:before {
+	content: url("/assets/rss.jpg");
+}
+
+.after:after {
+	content: url("/assets/question.jpg");
+}

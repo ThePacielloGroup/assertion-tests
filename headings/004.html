@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="has text">
+	<title>Heading</title>
+	<style type="text/css">	
+		.h3 {
+			font-weight: 900;
+			font-size: 18px;
+		}
+		.h4 {
+			font-weight: bold;
+			font-size: 14px;
+		}
+		.h5 {
+			font-weight: bold;
+			font-size: 14px;
+			width: 50px;
+			height: 50px;
+		}		
+	</style>
+</head>
+<body>
+
+<h1>First</h1>
+<h2></h2>
+<h2><img src="/assets/question.jpg" alt='FAQ'></h2>
+<h2><img src="/assets/question.jpg"></h2>
+<p role='heading' class='h3' aria-level='3'>Third</p>
+<p role='heading' aria-level='4' class='h4'></p>
+<p role='heading' aria-level='4' class='h4'><img src="/assets/question.jpg" alt='Manual'></p>
+<h5>here is a bunch
+of text
+</h5>
+<h5 aria-label="WTF"></h5>
+<h5 aria-labelledby='h5' class='h5'></h5>
+<p id='h5'>I'm aria-label led by test</p>
+
+</body>
+</html>

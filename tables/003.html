@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="bad or missing <th> scope attr">
+	<title>tables</title>
+	<style type="text/css">
+		table {
+			border: 3px solid blue;
+		}
+		th, td {
+		    border: 1px solid #666;
+		    padding: 3px;   
+		}		
+	</style>
+</head>
+<body>
+
+<table>
+<thead>
+	<tr>
+		<th class='bad1'></th>
+		<th scope='col'>col-1</th>
+		<th scope='cols' class='bad2'>col-2</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<th scope='row'>row-1</th>
+		<td>a</td>
+		<td>b</td>
+	</tr>
+</tbody>
+</table>
+
+</body>
+</html>

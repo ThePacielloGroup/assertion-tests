@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="visible label, hidden input">
+	<title>forms</title>
+	<style type="text/css">
+		.nodisp {
+			display: none;
+		}
+		.novis {
+			visibility: hidden;
+		}
+		.nosize {
+			width: 0px;
+			height: 0px;
+		}
+	</style>
+</head>
+<body>
+
+<div>
+	<label for='first' class='hidden-input1'>first</label>
+	<input type="text" name="" id='first' class='nodisp'>
+</div>
+
+<div>
+	<label for='middle' class='hidden-input2'>Middle</label>
+	<input type="text" name="" id='middle' class='novis'>
+</div>
+
+<div>
+	<label for='good'>good examle
+		<input type="text" name="" id='good'>
+	</label>
+</div>
+
+<div>
+	<label for='addr1' class='hidden-input3'>Address 1</label>
+	<input type="text" name="" id='addr1' class='nosize'>
+</div>
+
+<div>
+	<label for='addr2' class='hidden-input4'>Address 2</label>
+	<div class='novis'>
+		<input type="text" name="" id='addr2'>
+	</div>
+</div>
+
+</body>
+</html>

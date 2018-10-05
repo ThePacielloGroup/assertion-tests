@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="<td> has scope attr">
+	<title>tables</title>
+	<style type="text/css">
+		table {
+			border: 3px solid blue;
+		}
+		th, td {
+		    border: 1px solid #666;
+		    padding: 3px;   
+		}		
+	</style>
+</head>
+<body>
+
+<table>
+<thead>
+	<tr>
+		<th scope='row'></th>
+		<th scope='col'>col-1</th>
+		<th scope='col'>col-2</th>
+		<th scope='col'>col-3</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<th scope='row'>row-1</th>
+		<td scope='row' class='bad1'>a</td>
+		<td>b</td>
+		<td scope='electron' class='bad2'>c</td>
+	</tr>
+</tbody>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="invalid aria-labelledby">
+	<title>forms</title>
+</head>
+<body>
+
+<div id="billing">Billing Address</div>
+
+<div>
+    <div id="name">Name</div>
+    <input type="text" aria-labelledby="billing name"/>
+</div>
+<div>
+    <div id="address">Address</div>
+    <input type="text" aria-labelledby="billing addr"/>
+</div>
+<div>
+	<div id='descr'>click for great savings</div>
+	<input type="image" src='./question.jpg' aria-labelledby='adf'>
+</div>
+<div>
+	<div id='descr2'>click for great savings</div>
+	<input type="image" src='./question.jpg' aria-labelledby=''>
+</div>
+
+</body>
+</html>

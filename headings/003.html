@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="aria-level on [role='heading']">
+	<title>Heading</title>
+	<style type="text/css">	
+		.h3 {
+			font-weight: 900;
+			font-size: 18px;
+		}
+		.h4 {
+			font-weight: bold;
+			font-size: 14px;
+		}
+		.h5 {
+			font-weight: bold;
+			font-size: 18px;
+		}		
+		.nodisp {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+
+<h1>First</h1>
+<h2>Second</h2>
+<p role='heading' class='h3'>Third</p>
+<p role='heading' aria-level='4' class='h4'>Fourth</p>
+<p role='heading' class='h5 nodisp'>Fourth</p>
+
+</body>
+</html>

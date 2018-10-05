@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="hidden labels">
+	<style type="text/css">
+		.nodisp {
+			display: none;
+		}
+		.novis {
+			visibility: hidden;
+		}
+		.nosize {
+			width: 0px;
+			height: 0px;
+		}
+	</style>	
+	<title>forms</title>
+</head>
+<body>
+
+<p>
+	<label for='name1'>name 1</label>
+	<input type="text" name="" id='name1'>
+</p>
+<p>
+	<label for='name2' aria-hidden='true'>name 2</label>
+	<input type="text" name="" id='name2'>
+</p>
+<p>
+	<label for='name3' class='nodisp'>name 3</label>
+	<input type="text" name="" id='name3'>
+</p>
+<p>
+	<label for='name4' class='novis'>name 4</label>
+	<input type="text" name="" id='name4'>
+</p>
+<p aria-hidden='true'>
+	<label for='name5'>name 5</label>
+</p>
+<p>
+	<input type="text" name="" id='name5'>
+</p>
+<p class="nodisp">
+	<label for='name6'>name 6</label>
+</p>
+<p>
+	<input type="text" name="" id='name6'>
+</p>
+</body>
+</html>

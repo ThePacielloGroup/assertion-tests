@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="tab index > 0">
+	<title>tab index</title>
+</head>
+<body>
+
+<a href="#" tabindex="2" class='badtab1'>second</a>
+<div style='margin-top: 50px'>
+<a href="#" tabindex="1" style="margin-left: 50x;" class='badtab2'>first</a>	
+</div>
+
+<div>
+<h2 tabindex="3" class='badtabnonactive' style="margin-top: 50px;">I'm Focusable</h2>
+</div>
+<div style="margin-top: 50px">
+	<div tabindex="4" role='slider' class='badtab3'>fake slider</div>
+</div>
+<div style="margin-top: 50px">
+	<a href="#" >fifth</a>
+</div>
+<div style="margin-top: 50px">
+<a href="#" aria-hidden='true'>sixth</a>
+</div>
+<div style="margin-top: 50px">
+<a href="#" tabindex="-1">seventh</a>
+</div>
+<div style="margin-top: 50px">
+<a href="#" >eighth</a>
+</div>
+
+</body>
+</html>

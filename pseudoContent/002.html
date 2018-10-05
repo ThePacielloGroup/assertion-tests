@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="non pua on active element">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>pseudo content</title>
+	<link rel="stylesheet" type="text/css" href="/assets/pseudoContent/font icons/no-pua/styles.css">
+</head>
+<body>
+
+<h2>clickable parent</h2>
+<button><span class='icon icon-social-twitter'></span></button>
+<br><br>
+<a href="https://www.twitter.com" aria-label="twitter"><span class='icon icon-social-twitter'></span></a>
+
+<h2>clickable self</h2>
+<button class='icon icon-social-twitter'></button>
+<br><br>
+<a href="https://www.twitter.com" aria-label="twitter" class='icon icon-social-twitter'></a>
+
+<h2>clickable parent, hidden content</h2>
+<button><span class='icon icon-social-twitter' aria-hidden='true'></span></button>
+<br><br>
+<a href="https://www.twitter.com" aria-label="twitter"><span class='icon icon-social-twitter' aria-hidden='true'></span></a>
+
+</body>
+</html>
